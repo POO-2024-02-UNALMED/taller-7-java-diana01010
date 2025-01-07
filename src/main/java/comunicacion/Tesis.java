@@ -45,12 +45,16 @@ public class Tesis extends Escrito {
 
     @Override
     public String interpretacion() {
-        return "Escrito investigativo";
+        return "Interpretación de tesis";
     }
 
     @Override
     public String toString() {
-        return getOrigen() + "\n" + getTitulo() + "\n" + getAutor() + "\n" + getPaginas() + "\n" + getIdea() + "\n" + argumentos.size() + "\n" + conclusion + "\n" + referencias;
+        // Accedemos a los argumentos y los unimos en una cadena con ", " como separador
+        String argumentosStr = String.join(", ", argumentos);
+        return getOrigen() + "\n" + getTitulo() + "\n" + getAutor() + "\n" + getPaginas() + "\n" +
+               argumentosStr + "\n" + getConclusion() + "\n" + getReferencias();
     }
 }
+
 
