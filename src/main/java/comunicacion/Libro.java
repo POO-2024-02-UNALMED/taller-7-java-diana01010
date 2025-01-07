@@ -43,11 +43,12 @@ public class Libro extends Escrito {
 
     @Override
     public String interpretacion() {
-        return "Interpretación de libro";
+        return "Escrito largo";
     }
 
     @Override
     public String toString() {
-        return getTitulo() + "\n" + getAutor() + "\n" + getPaginas() + "\n" + coAutor + "\n" + editorial + "\n" + edicion;
+        return getOrigen() + "\n" + getTitulo() + "\n" + getAutor() + "\n" + getPaginas() + "\n" + coAutor + "\n" + editorial + "\n" + edicion;
     }
 }
+

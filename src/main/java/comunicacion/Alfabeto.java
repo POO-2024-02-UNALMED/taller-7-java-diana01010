@@ -24,7 +24,7 @@ public class Alfabeto extends Pictograma {
 
     @Override
     public String interpretacion() {
-        return "Interpretación del alfabeto";
+        return "Alfabeto latino";
     }
 
     @Override
@@ -32,3 +32,4 @@ public class Alfabeto extends Pictograma {
         return String.join(", ", letras);
     }
 }
+

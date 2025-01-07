@@ -33,11 +33,12 @@ public class Periodico extends Escrito {
 
     @Override
     public String interpretacion() {
-        return "Interpretación de periódico";
+        return "Escrito informativo";
     }
 
     @Override
     public String toString() {
-        return getTitulo() + "\n" + getAutor() + "\n" + getPaginas() + "\n" + fecha + "\n" + primicia;
+        return getOrigen() + "\n" + getTitulo() + "\n" + getAutor() + "\n" + getPaginas() + "\n" + fecha + "\n" + primicia;
     }
 }
+

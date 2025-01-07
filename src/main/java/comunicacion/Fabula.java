@@ -18,16 +18,17 @@ public class Fabula extends Escrito {
 
     @Override
     public int palabrasTotales(int palabrasPagina) {
-        return getPaginas() * palabrasPagina * 1; // Factor para Fabula es 1
+        return getPaginas() * palabrasPagina * 1; // Factor para Fábula es 1
     }
 
     @Override
     public String interpretacion() {
-        return "Interpretación de fábula";
+        return "Cuento corto";
     }
 
     @Override
     public String toString() {
-        return getTitulo() + "\n" + getAutor() + "\n" + getPaginas() + "\n" + ensenanza;
+        return getOrigen() + "\n" + getTitulo() + "\n" + getAutor() + "\n" + getPaginas() + "\n" + ensenanza;
     }
 }
+
