@@ -1,13 +1,16 @@
 package comunicacion;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class Alfabeto extends Pictograma {
     private List<String> letras;
 
-    public Alfabeto(String origen, List<String> letras) {
+    // Modificar el constructor para aceptar varargs
+    public Alfabeto(String origen, String... letras) {
         super(origen);
-        this.letras = letras;
+        // Convertir los argumentos varargs en una lista
+        this.letras = Arrays.asList(letras);
     }
 
     public List<String> getLetras() {
@@ -32,4 +35,5 @@ public class Alfabeto extends Pictograma {
         return String.join(", ", letras);
     }
 }
+
 
